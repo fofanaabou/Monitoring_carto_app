@@ -1,13 +1,13 @@
 var express = require('express');
 var app = express(); // une instance d'express
-var server = require('http').Server(app)
+app.set('port',(process.env.PORT || 5000));
+var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var path = require('path');
 var routes=require('./routes');
 var drivers = {};
 var service = {};
 var bookid;
-
 
 //Templates engine
 app.set('view engine', 'ejs');
@@ -188,7 +188,7 @@ function distance(lat1, lon1, lat2, lon2) {
     return 12742 * Math.asin(Math.sqrt(a));
 }
 
-server.listen(8085, function () {
-    console.log("See on localhost:8085/")
+server.listen(app.get('port'), function () {
+    console.log("See on localhost:5000", app.get('port'));
 
 });
