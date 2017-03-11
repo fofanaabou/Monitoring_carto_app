@@ -1,0 +1,12 @@
+<Canvas Height="1146.6" Name="Workspace" Width="925.98" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<!-- Page Page 1 -->
+	<Canvas Width="925.98" Height="1146.6" Name="D">
+		<Canvas.Background>
+			<SolidColorBrush Color="#FFFFFFFF"/>
+		</Canvas.Background>
+		<Canvas Tag="_1" Name="_1" RenderTransform="1, 0, 0, 1, 132.384245, -24">
+			<Image Name="img0_1" Source="90BB46D2-7E60-4779-AE31-2B9D7FFF5F5F.jpg" Stretch="Fill" Canvas.Left="0" Canvas.Top="24"
+					Width="793.6" Height="1122.56" Opacity="1"/>
+		</Canvas>
+	</Canvas>
+</Canvas>
